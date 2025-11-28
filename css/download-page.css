@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+    color: white;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.hero-balloon {
+    max-width: 300px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.download-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+    margin-top: -50px;
+    border-radius: 50px 50px 0 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.download-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.download-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.card-icon.web {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card-description {
+    color: #666;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.feature-list li {
+    padding: 8px 0;
+    color: #555;
+}
+
+.feature-list i {
+    color: #667eea;
+    margin-right: 10px;
+}
+
+.download-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.download-info span {
+    font-weight: 600;
+    color: #666;
+}
+
+.btn-download {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-download.desktop {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-download.desktop:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: scale(1.05);
+    color: white;
+}
+
+.btn-download.web {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.btn-download.web:hover {
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+    transform: scale(1.05);
+    color: white;
+}
+
+.btn-download i {
+    margin-right: 8px;
+}
+
+.btn-download-alt {
+    display: block;
+    width: 100%;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #667eea;
+    background: white;
+    color: #667eea;
+    margin-top: 10px;
+}
+
+.btn-download-alt:hover {
+    background: #667eea;
+    color: white;
+    transform: scale(1.02);
+    text-decoration: none;
+}
+
+.btn-download-alt i {
+    margin-right: 8px;
+}
+
+.version-info {
+    text-align: center;
+    margin-top: 10px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.features-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.feature-box {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.feature-box:hover .feature-icon {
+    background: white;
+    color: #667eea;
+}
+
+.feature-box h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.instructions-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.instruction-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.instruction-card h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #667eea;
+}
+
+.instruction-card ol {
+    padding-left: 20px;
+}
+
+.instruction-card li {
+    padding: 8px 0;
+    line-height: 1.6;
+}
+
+.footer {
+    background: #2d3748;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .text-muted {
+    color: #a0aec0 !important;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header .close {
+    color: white;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-balloon {
+        max-width: 200px;
+        margin-top: 30px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
